@@ -8,7 +8,7 @@ import sys
 import inspect
 import aiohttp
 import traceback
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A bot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A selfbot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
 
 
 @bot.event
