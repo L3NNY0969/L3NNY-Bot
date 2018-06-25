@@ -15,15 +15,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="
 async def on_ready():
     print('Bot is online, and ready to ROLL!')
     while True:
-        await bot.change_presence(activity=discord.Game(name=f"AFK"), status='idle')
-
-
-@bot.event
-async def on_message(message):
-    if message.author.bot:
-        return
-
-    await bot.process_commands(message)
+        await bot.change_presence(activity=discord.Game(name=f"lol i broke it"), status='dnd')
 
 
 
