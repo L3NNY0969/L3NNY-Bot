@@ -33,7 +33,7 @@ async def support(ctx):
     await ctx.send(embed=em)
     
     
-@bot.command(name='eval', hidden=true)
+@bot.command(name='eval', hidden=True)
 async def _eval(ctx, *, body):
     """Evaluates python code"""
     if not dev_check(ctx.author.id):
