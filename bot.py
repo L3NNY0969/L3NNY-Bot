@@ -11,6 +11,19 @@ import traceback
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A bot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
 
 
+@bot.event
+async def on_ready():
+    print('Bot is online, and ready to ROLL!')
+    while True:
+        await bot.change_presence(activity=discord.Game(name=f"AFK"), status='idle')
+
+
+@bot.event
+async def on_message(message):
+    if message.author.bot:
+        return
+
+    await bot.process_commands(message)
 
 
 
