@@ -2,7 +2,7 @@
 L3NNY Bot is a discord selfbot ment to make your discord life easy. 
 
 # Warning 
-This is against Discord ToS and you using this riskes your account. 
+This is against Discord ToS and you using this puts your account at risk.
 
 # How to set up
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/verixx/selfbot.py/tree/rewrite)
