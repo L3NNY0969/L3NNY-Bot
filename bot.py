@@ -38,6 +38,15 @@ async def support(ctx):
     await ctx.send(embed=em)
     
     
+@bot.command()
+async def info(ctx):
+    """Get infomation about the selfbot"""
+    color = discord.Color(value=0x00ff00)
+    em = discord.Embed(color=color, title='Infomation:')
+    em.description = f"**Creator:** L3NNY#0849\n**Ping:**{bot.latency * 1000:.4f}\n**Servers you are in:** {len(bot.guilds)}"
+    await ctx.send(embed=em)
+                        
+
 @bot.command(name='eval', hidden=True)
 async def _eval(ctx, *, body):
     """Evaluates python code"""
