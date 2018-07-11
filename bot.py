@@ -11,14 +11,6 @@ import traceback
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A selfbot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
 
 
-@bot.event
-async def on_ready():
-    print('Bot is online, and ready to ROLL!')
-    while True:
-        await bot.change_presence(activity=discord.Game(name=f"lol i broke it"), status='dnd')
-
-
-
 @bot.command()
 async def ping(ctx):
     """Get the bot's Websocket latency."""
@@ -28,7 +20,13 @@ async def ping(ctx):
     await ctx.send(embed=em)
 
 
+    
+@bot.command()
+async def uptime(ctx):
+    embed = discord.Embed(title="SelfBot Uptime", color = 00ff00, description=str(timedelta_str(datetime.datetime.now() - start_time)))
+    await ctx.send(embed=embed)
 
+    
 @bot.command()
 async def support(ctx):
     """Get help with the selfbot"""
