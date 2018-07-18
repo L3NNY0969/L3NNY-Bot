@@ -25,13 +25,13 @@ async def ping(ctx):
     await ctx.send(embed=em)
 
 
-@bot.command()
-async def uptime(ctx):
-    """Get the bot's Websocket latency."""
-    color = discord.Color(value=0x00ff00)
-    em = discord.Embed(color=color, title='Selfbot Uptime')
-    em.description = f"{str(timedelta_str(datetime.datetime.now() - start_time)))"
-    await ctx.send(embed=em)
+#@bot.command()
+#async def uptime(ctx):
+ #   """Get the bot's uptime"""
+ #   color = discord.Color(value=0x00ff00)
+ #   em = discord.Embed(color=color, title='Selfbot Uptime')
+ #   em.description = f"{str(timedelta_str(datetime.datetime.now() - start_time)))"
+ #   await ctx.send(embed=em)
 
     
 @bot.command()
