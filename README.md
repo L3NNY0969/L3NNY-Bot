@@ -12,9 +12,9 @@ First go to heroku (press deploy to heroku) and then sign up or log in. Then aft
 
 # Customize
 
-Want to edit prefix? Go into the [bot.py](https://github.com/L3NNY0969/L3NNY-Bot/blob/master/bot.py) and find ```bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A bot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)``` and edit the ```+``` to whatever prefix you want. 
+Want to edit prefix? Go into the [bot.py](https://github.com/L3NNY0969/L3NNY-Bot/blob/6aeee154a45d622e1a9123574b0557573b42f858/bot.py#L16) and find and edit the ```+``` to whatever prefix you want. 
 **Tip:** Change it to something no one knows. Just to be safe.
 
-Change ```owner_id=411683912729755649)``` in the bot.py and change it to your id.
+Change ```owner_id=411683912729755649)``` in the [bot.py](https://github.com/L3NNY0969/L3NNY-Bot/blob/6aeee154a45d622e1a9123574b0557573b42f858/bot.py#L16) and change it to your id.
 
 This is being updated daily so make sure to check back often!
